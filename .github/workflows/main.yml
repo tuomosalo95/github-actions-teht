@@ -1,0 +1,17 @@
+name: Eka GitHub Action
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  tervehdys:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Tulosta tervehdys
+        run: echo "GitHub Actions toimii!"
+
+      - name: Näytä päivämäärä
+        run: date
