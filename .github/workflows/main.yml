@@ -15,3 +15,6 @@ jobs:
 
       - name: Näytä päivämäärä
         run: date
+
+      - name: Näytä repository
+        run: echo "Repository: ${{ github.repository }}"
