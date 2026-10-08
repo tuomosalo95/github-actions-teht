@@ -1,4 +1,4 @@
-name: Eka GitHub Action
+name: Oma ensimmäinen GitHub Action
 
 on:
   push:
@@ -8,7 +8,6 @@ on:
 jobs:
   tervehdys:
     runs-on: ubuntu-latest
-
     steps:
       - name: Tulosta tervehdys
         run: echo "GitHub Actions toimii!"
@@ -17,4 +16,4 @@ jobs:
         run: date
 
       - name: Näytä repository
-        run: echo "Repository: ${{ github.repository }}"
+        run: 'echo "Repository: ${{ github.repository }}"'
